@@ -2,13 +2,12 @@ import React, { useEffect } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import  Header  from './Header'
 import Landing from './Landing'
+import Dashboard from './Dashboard'
+import SurveyNew from './surveys/SurveyNew'
 import { connect } from 'react-redux'
 import * as actions from '../actions'
 import Container from '@material-ui/core/Container'
 import { makeStyles } from '@material-ui/core/styles'
-
-const Dashboard = () => <h1>Dashboard</h1>
-const SurveyNew = () => <h1>SurveyNew</h1>
 
 const useStyles = makeStyles((theme) => ({
 	root: {

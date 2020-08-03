@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import AddIcon from '@material-ui/icons/Add'
 import { makeStyles } from '@material-ui/core/styles'
 import SurveyForm from './SurveyForm'
+import SurveyFormReview from './SurveyFormReview'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,13 +16,19 @@ const SurveyNew = () => {
 
     const classes = useStyles()
 
+    const [showReview, setShowReview] = useState(false)
+
+    const handleChange = () => setShowReview(!showReview)
+
     return(
         <Container className={classes.root}>
             <CssBaseline />
             <Typography variant='h3' color='inherit'>
-                SurveyNew
+                Create a new survey
             </Typography>
-            <SurveyForm />
+            {showReview ? <SurveyFormReview showReview={handleChange} /> : <SurveyForm showReview={handleChange} />}
+            
+            
         </Container>
         
     )

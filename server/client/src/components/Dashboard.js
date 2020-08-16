@@ -6,6 +6,7 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import AddIcon from '@material-ui/icons/Add'
 import { makeStyles } from '@material-ui/core/styles'
 import { Link } from 'react-router-dom'
+import SurveyList from './SurveyList'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -26,9 +27,7 @@ const Dashboard = () => {
         <Container className={classes.root}>
             <CssBaseline />
             <div>
-                <Typography variant='h3' color='inherit'>
-                    Dashboard
-                </Typography>
+                <SurveyList />
             </div>
             <Link to='/surveys/new'>
                 <Fab color='secondary' aria-label='add' className={classes.fab}>

@@ -7,7 +7,7 @@ import reducers from './reducers'
 import reduxThunk from 'redux-thunk'
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
-import { blue, teal } from '@material-ui/core/colors'
+import { teal } from '@material-ui/core/colors'
 const theme = createMuiTheme({
     palette: {
         primary: {

@@ -1,6 +1,5 @@
 import React from 'react'
 import Fab from '@material-ui/core/Fab'
-import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import AddIcon from '@material-ui/icons/Add'
@@ -26,9 +25,9 @@ const Dashboard = () => {
     return(
         <Container className={classes.root}>
             <CssBaseline />
-            <div>
+            <Container>
                 <SurveyList />
-            </div>
+            </Container>
             <Link to='/surveys/new'>
                 <Fab color='secondary' aria-label='add' className={classes.fab}>
                     <AddIcon />

@@ -32,7 +32,7 @@ const SurveyList = ({ surveys, fetchSurveys }) => {
 					<Card key={_id} className={classes.card}>
 						<CardContent>
 							<Typography
-								variant='h6'
+								variant='h5'
 								gutterBottom
 								color='primary'
 							>

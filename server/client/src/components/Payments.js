@@ -24,7 +24,6 @@ const Payments = ({ handleToken }) => {
 			description='$5 for 5 email credits'
 			amount={500}
 			token={(token) => handleToken(token)}
-			// token={(token) => console.log(token)}
 			stripeKey={process.env.REACT_APP_STRIPE_KEY}
 		>
 			<Button color='inherit' className={classes.btn}>
